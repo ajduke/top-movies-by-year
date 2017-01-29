@@ -3,9 +3,16 @@
   "version": "2.0.0",
   "description": "just top movies of all years ",
   "main": "src/app.js",
+  "scripts": {
+    "test": "mocha src/*.test.js -w"
+  },
   "author": "ajduke",
   "license": "MIT",
   "dependencies": {
     "unique-random-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   }
 }
