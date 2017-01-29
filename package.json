@@ -10,8 +10,10 @@
   },
   "author": "ajduke",
   "license": "MIT",
-  "czConfig":{
-    "path" : "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path" : "node_modules/cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "unique-random-array": "^1.0.0"
