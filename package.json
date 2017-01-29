@@ -5,8 +5,8 @@
   "main": "src/app.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha src/*.test.js",
-    "test:local": "mocha src/*.test.js -w",
+    "test:single": "istanbul cover -x *.test.js _mocha -- -R spec src/app.test.js",
+    "test": "istanbul cover -x *.test.js _mocha -- -R spec src/app.test.js -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "ajduke",
@@ -15,8 +15,8 @@
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     },
-    "ghooks":{
-      "pre-commit": "npm run test"
+    "ghooks": {
+      "pre-commit": "npm run test:single"
     }
   },
   "dependencies": {
@@ -27,6 +27,7 @@
     "commitizen": "^2.9.5",
     "cz-conventional-changelog": "^1.2.0",
     "ghooks": "^2.0.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "semantic-release": "^6.3.2"
   },
