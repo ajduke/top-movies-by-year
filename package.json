@@ -4,16 +4,22 @@
   "description": "just top movies of all years ",
   "main": "src/app.js",
   "scripts": {
+    "commit": "git-cz",
     "test": "mocha src/*.test.js -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "ajduke",
   "license": "MIT",
+  "czConfig":{
+    "path" : "node_modules/cz-conventional-changelog"
+  },
   "dependencies": {
     "unique-random-array": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "commitizen": "^2.9.5",
+    "cz-conventional-changelog": "^1.2.0",
     "mocha": "^3.2.0",
     "semantic-release": "^6.3.2"
   },
