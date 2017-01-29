@@ -5,7 +5,8 @@
   "main": "src/app.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha src/*.test.js -w",
+    "test": "mocha src/*.test.js",
+    "test:local": "mocha src/*.test.js -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "ajduke",
