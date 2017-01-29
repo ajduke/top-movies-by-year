@@ -1,10 +1,11 @@
 {
   "name": "top-movies",
-  "version": "2.0.0",
+  "version": "0.0.0-development",
   "description": "just top movies of all years ",
   "main": "src/app.js",
   "scripts": {
-    "test": "mocha src/*.test.js -w"
+    "test": "mocha src/*.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "ajduke",
   "license": "MIT",
@@ -13,6 +14,11 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "semantic-release": "^6.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajduke/top-movies-by-year.git"
   }
 }
