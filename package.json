@@ -1,0 +1,11 @@
+{
+  "name": "top-movies",
+  "version": "1.0.0",
+  "description": "just top movies of all years ",
+  "main": "src/app.js",
+  "author": "ajduke",
+  "license": "MIT",
+  "dependencies": {
+    "unique-random-array": "^1.0.0"
+  }
+}
