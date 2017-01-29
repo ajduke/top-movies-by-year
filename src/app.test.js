@@ -17,4 +17,13 @@ describe('Movies list', ()=>{
     expect(randomItem).to.be.a('string');
     expect(app.all()).includes(randomItem);
   })
+
+  it('should return 3 random numbers', ()=>{
+    const randomItems =  app.random(3)
+    expect(randomItems).to.have.lengthOf(3)
+    randomItems.forEach((item)=>{
+      expect(item).to.be.a('string')
+      expect(app.all()).includes(item);
+    })
+  })
 })
